@@ -1,3 +1,4 @@
+import { fetch as fetchPolyfill } from 'whatwg-fetch';
 import { setGetParams } from '../utils/api';
 import { mergeDeep } from '../utils/common';
 
@@ -25,15 +26,21 @@ class Http {
         return this.handleError(reject, 'Error! No url was provided.');
       }
 
+      const defaultOpt = { ...this.defaultOptions };
+      const mergedOptions = mergeDeep(defaultOpt, options);
+      let fetchFunc;
+
       if (this.isFetchApiAvailable()) {
-        const defaultOpt = { ...this.defaultOptions };
-        const mergedOptions = mergeDeep(defaultOpt, options);
-        fetch(url, mergedOptions)
-          .then((response) => this.handleRequestSuccess(response, response.status))
-          .then((response) => response.json())
-          .then((response) => this.handleSuccess(resolve, response, response.status))
-          .catch((error) => this.handleError(reject, error));
+        fetchFunc = fetch;
+      } else {
+        fetchFunc = fetchPolyfill;
       }
+
+      fetchFunc(url, mergedOptions)
+        .then((response) => this.handleRequestSuccess(response, response.status))
+        .then((response) => response.json())
+        .then((response) => this.handleSuccess(resolve, response, response.status))
+        .catch((error) => this.handleError(reject, error));
     });
   }
 
@@ -92,6 +99,7 @@ class Http {
     return this.request({
       url: urlWithParams,
       options: {
+        method: 'GET',
         headers: headers
       }
     });
