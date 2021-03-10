@@ -1,5 +1,6 @@
 import 'core-js/es/map';
 import 'core-js/es/set';
+import 'core-js/es/object/assign';
 import 'raf/polyfill';
 
 import React from 'react';
