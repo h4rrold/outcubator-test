@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/outcubator-test/static/css/main.91669dd4.chunk.css",
-    "main.js": "/outcubator-test/static/js/main.c1c808a8.chunk.js",
-    "main.js.map": "/outcubator-test/static/js/main.c1c808a8.chunk.js.map",
-    "runtime-main.js": "/outcubator-test/static/js/runtime-main.72fcf275.js",
-    "runtime-main.js.map": "/outcubator-test/static/js/runtime-main.72fcf275.js.map",
-    "static/js/2.300b0af9.chunk.js": "/outcubator-test/static/js/2.300b0af9.chunk.js",
-    "static/js/2.300b0af9.chunk.js.map": "/outcubator-test/static/js/2.300b0af9.chunk.js.map",
-    "index.html": "/outcubator-test/index.html",
-    "static/css/main.91669dd4.chunk.css.map": "/outcubator-test/static/css/main.91669dd4.chunk.css.map",
-    "static/js/2.300b0af9.chunk.js.LICENSE.txt": "/outcubator-test/static/js/2.300b0af9.chunk.js.LICENSE.txt"
+    "main.css": "/static/css/main.91669dd4.chunk.css",
+    "main.js": "/static/js/main.a70f4fcc.chunk.js",
+    "main.js.map": "/static/js/main.a70f4fcc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.45939fd9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.45939fd9.js.map",
+    "static/js/2.300b0af9.chunk.js": "/static/js/2.300b0af9.chunk.js",
+    "static/js/2.300b0af9.chunk.js.map": "/static/js/2.300b0af9.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.91669dd4.chunk.css.map": "/static/css/main.91669dd4.chunk.css.map",
+    "static/js/2.300b0af9.chunk.js.LICENSE.txt": "/static/js/2.300b0af9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.72fcf275.js",
+    "static/js/runtime-main.45939fd9.js",
     "static/js/2.300b0af9.chunk.js",
     "static/css/main.91669dd4.chunk.css",
-    "static/js/main.c1c808a8.chunk.js"
+    "static/js/main.a70f4fcc.chunk.js"
   ]
 }
